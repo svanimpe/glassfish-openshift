@@ -1,0 +1,4 @@
+cd $OPENSHIFT_REPO_DIR/diy/glassfish4/glassfish/domains/domain1/config/
+sed 's/'OPENSHIFT_DIY_IP'/'$OPENSHIFT_DIY_IP'/g' domain.xml > domain.xml.2
+mv domain.xml.2 domain.xml
+../../../bin/asadmin start-domain

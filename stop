@@ -1,0 +1,2 @@
+kill `ps -ef | grep glassfish4 | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
+exit 0
